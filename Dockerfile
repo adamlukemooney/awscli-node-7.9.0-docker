@@ -5,7 +5,6 @@ RUN apt-get update && apt-get install -y\
       python-pip \
       libpython-dev \
       unzip \
-      yarn \
       zip
 
 RUN pip install \
@@ -13,5 +12,6 @@ RUN pip install \
       awscli==1.11.52
 
 RUN npm install -g codeclimate-test-reporter@0.4.1
+RUN npm install -g yarn
 
 CMD ["node"]
